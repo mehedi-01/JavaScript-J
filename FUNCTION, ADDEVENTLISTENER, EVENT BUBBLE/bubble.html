@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <ul id="newList">
+            <h1>List</h1>
+            <li id="orange" class="item">Lorem ipsum dolor sit.</li>
+            <li class="item">Ex minus consectetur asperiores!</li>
+            <li class="item">Dolorum unde voluptas nostrum.</li>
+            <li class="item">Vel fuga nesciunt consequatur?</li>
+            <li class="item">Repellendus voluptate maxime ullam!</li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('orange').addEventListener('click', function(event){
+            console.log('hey baby')
+
+        })
+        document.getElementById('container').addEventListener('click', function(event){
+            console.log('hello baby')
+            event.stopImmediatePropagation();
+
+        })
+        document.getElementById('newList').addEventListener('click', function(event){
+            console.log('my baby')
+
+        })
+        
+        
+
+
+    </script>
+</body>
+
+</html>
