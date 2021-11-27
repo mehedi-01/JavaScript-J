@@ -9,8 +9,17 @@
 </head>
 
 <body>
-    <h1>Main Events</h1>
-    <button onclick="alert(12)">On Click</button>
+    <h1 onclick="handleClick">Main Events</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem earum ad molestias autem ipsa quasi natus fugit provident est, dignissimos consectetur! Sequi omnis error sunt sint recusandae eius quasi ipsam!</p>
+    <button>Click</button>
+    <button class="new">Click -1</button>
+    <button>Click -2</button>
+    <button class="click1">Click -3</button>
+    <script>
+        document.getElementById("click1").addEventListener(click, function () {
+            document.body.style.background = 'tomato';
+        })
+    </script>
 </body>
 
 </html>
