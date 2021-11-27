@@ -18,26 +18,39 @@
             <li class="item">Vel fuga nesciunt consequatur?</li>
             <li class="item">Repellendus voluptate maxime ullam!</li>
         </ul>
+        <button id="addNew">new Item</button>
     </div>
 
     <script>
-        document.getElementById('orange').addEventListener('click', function(event){
-            console.log('hey baby')
+
+        // var items = document.getElementsByClassName('item');
+        // for (let i = 0; i < items.length; i++) {
+        //     var item = items[i];
+        //     item.addEventListener('click', function (event) {
+        //         event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
+
+        document.getElementsById('addNew').addEventListener('click', function(event){
+            var itemParent = document.getElementsById("newList");
+            var newItem = document.createElement('li');
+            newItem.innerText = 'my new Item for You';
+            itemParent.appendChild(newItem);
 
         })
-        document.getElementById('container').addEventListener('click', function(event){
-            console.log('hello baby')
-            event.stopImmediatePropagation();
+        // // document.getElementById('orange').addEventListener('click', function(event){
+        // //     console.log('hey baby')
 
-        })
-        document.getElementById('newList').addEventListener('click', function(event){
-            console.log('my baby')
+        // // })
+        // // document.getElementById('container').addEventListener('click', function(event){
+        // //     console.log('hello baby')
+        // //     event.stopImmediatePropagation();
 
-        })
-        
-        
+        // // })
+        // // document.getElementById('newList').addEventListener('click', function(event){
+        // //     console.log('my baby')
 
-
+        // })
     </script>
 </body>
 
