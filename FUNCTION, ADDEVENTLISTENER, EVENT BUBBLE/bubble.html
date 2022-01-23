@@ -23,16 +23,16 @@
 
     <script>
 
-        // var items = document.getElementsByClassName('item');
-        // for (let i = 0; i < items.length; i++) {
-        //     var item = items[i];
-        //     item.addEventListener('click', function (event) {
-        //         event.target.parentNode.removeChild(event.target);
-        //     })
-        // }
+        var items = document.getElementsByClassName('item');
+        for (let i = 0; i < items.length; i++) {
+            var item = items[i];
+            item.addEventListener('click', function (event) {
+                event.target.parentNode.removeChild(event.target);
+            })
+        }
 
         document.getElementsById('addNew').addEventListener('click', function(event){
-            var itemParent = document.getElementsById("newList");
+            var itemParent = document.getElementsById('');
             var newItem = document.createElement('li');
             newItem.innerText = 'my new Item for You';
             itemParent.appendChild(newItem);
